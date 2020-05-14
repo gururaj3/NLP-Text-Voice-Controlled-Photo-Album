@@ -101,3 +101,18 @@ iii.	Upload new photos using the PUT /photos<br/>
 #### d.	Upload the frontend files to the bucket (B2).
 
 #### e.	Integrate the API Gateway-generated SDK (SDK1) into the frontend, to connect your API.
+
+### 6. Implement Voice accessibility in the frontend
+#### a. Give the frontend user the choice to use voice rather than text to perform the search.
+#### b. Use Amazon Transcribe on the frontend to transcribe speech to text 8 (STT) in real time , then use the transcribed text to perform the search, using the same API like in the previous steps.
+#### c. Note: You can use a Google-like UI (see below) for implementing the search: 1. input field for text searches and 2. microphone icon for voice interactions.
+
+### 7. Deploy your code using AWS CodePipeline
+#### a. Define a pipeline (P1) in AWS CodePipeline that builds and deploys the code for/to all your Lambda functions
+#### b. Define a pipeline (P2) in AWS CodePipeline that builds and deploys your frontend code to its corresponding S3 bucket
+
+### 8. Create a AWS CloudFormation template for the stack 
+#### a. Create a CloudFormation template (T1) to represent all the infrastructure resources (ex. Lambdas, ElasticSearch, API Gateway, CodePipeline, etc.) and permissions (IAM policies, roles, etc.).
+
+
+
